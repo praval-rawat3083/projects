@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    /* background-color:    gray; */
+}
+#nav{
+    height:100px;
+    width:100%;
+    /* background-color: greenyellow; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap:70px;
+    padding-right: 30px;
+}
+#nav h1{
+    font-size: 2.5vw;
+}
+#heading{
+    font-size:2.5vw;
+padding: 5px 60px;
+}
+#para{
+    
+    display: flex;
+    justify-content:space-between;  
+    margin-top: 20px;
+    width: 100%;
+    height:200px;
+    /* background-color: blue; */
+}
+#para p{
+    font-size: 1.17vw;
+    line-height: 2vw;
+  }
+#right{
+    
+  font-size: 20px;
+  width:20%;      
+}
+.elem{
+   padding:15px 0;
+     width: 100%; 
+    /* background-color: rgb(120, 120, 15); */
+    border-top: 2px solid black;
+}
+
+.elem a{
+    text-decoration: none;
+    color: black;
+
+    
+}
+.elem:hover{
+    cursor: pointer;
+}
+#bottom{
+    background: url(jacket.jpg);
+    background-size: cover;
+    background-position:0 40%;
+    height:90%;
+}
+@media (max-width:600px){
+
+    #nav{
+        height:40px;
+        /* background-color: greenyellow; */
+        gap:20px;
+        padding-right:0 20px;
+    }
+    #nav h1{
+        font-size:vw;
+        display: none;
+    }
+#heading{
+    font-size:5vw;
+padding: 10px 20px;
+}
+#para{
+    flex-direction: column;
+    display: flex;
+    justify-content:space-between;  
+    margin-top:20px;
+    width: 100%;
+    height:250px;
+    /* background-color: blue; */
+}
+#para p{
+    font-size:4vw;
+    line-height: 6vw;
+  }
+#right{
+    font-size:5vw;
+  width:100%;      
+}
+.elem{
+     width: 100%; 
+    /* background-color: rgb(120, 120, 15); */
+    border-top:1px solid black;
+}
+
+.elem a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+#bottom{    
+    background-size: cover;
+    background-position:0 40%;
+    height:40%;
+}
+}

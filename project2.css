@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+    font-family:sans-serif
+}
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding:0px 90px;
+    padding-top: 130px;
+    gap: 70px;
+}
+#left{
+    height:100%;
+    width:44%;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom:50px ;
+}
+#left h1{
+    font-size:8vw;
+    font-weight:100;
+    line-height: 10vw;
+}
+#bottom{
+    width:100%;
+    /* height:40%; */
+    /* background-color: gray; */
+}
+#color{
+    /* background-color: blue; */
+    width:fit-content;
+    padding:6px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border:2px solid black;
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+#color h5{
+    font-size:.9vw;
+    margin-right: 10px;
+    font-weight: 800;
+}
+#color1{
+height:20px;
+width:20px;
+background-color: burlywood;
+border-radius: 50%;
+margin:3px;
+}
+#color2{
+    height:20px;
+    width:20px;
+    background-color:brown;
+    border-radius: 50%;
+}
+#bottom h2{
+    margin-top:30px;
+    font-size: 2.5vw;
+        font-weight: 600;
+}
+#bottom p{
+    font-size:1vw;
+    width:70%;
+    font-weight: 400;
+    line-height: 1.5vw;
+color: #444;
+}
+#right{
+    height:90%;
+    width:30%;
+    /* background-color: red; */
+    position:relative
+}
+#right-top{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width:100%;
+    /* background-color:blue; */
+    padding-right: 20px;
+}
+#right-top h4{
+    font-size: 30px;
+    font-weight: 500;                           ;
+}
+#right-top h5{
+    font-size: 20px;
+}
+#right img{
+    width:100%;
+    height: 90% ;
+    object-fit: cover;
+}
+#black-circle{
+    background-color: rgb(44, 42, 42);
+    width:120px;
+    height:120px;
+    border-radius: 50%;
+    right:-20%;
+    top:20%;
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white
+}
+#black-circle{
+    font-size: 25px;
+    font-weight: 400;
+}
+#rotated{
+    position: absolute;
+    left: -10%;
+    bottom: 8%;
+    rotate: -90deg;
+    transform-origin: 0 0;
+    font-size:2vw;
+}
+@media (max-width:600px) {
+    #main{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top:0px;
+        gap:0px;
+    }
+    #left{
+        height:80%;
+        width:100%;
+        /* background-color: rgb(153, 51, 83); */
+        padding-bottom:30px ;
+    }
+    #left h1{
+        font-size:11vw;
+        font-weight:100;
+        line-height: 11vw;
+    }
+    #bottom{
+        width:100%;
+        /* height:40%; */
+        /* background-color: gray; */
+    }
+    #color{
+        /* background-color: blue; */
+        width:fit-content;
+        padding:px 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        border:2px solid black;
+    }
+    #color h5{
+        font-size:2vw;
+        margin-right: 5px;
+        font-weight:600;
+    }
+    #color1{
+    height:20px;
+    width:20px;
+    background-color: burlywood;
+    border-radius: 50%;
+    margin:2px;
+    }
+    #bottom h2{
+        margin-top:15px;
+        font-size: 3.5vw;
+        font-weight: 200;
+    }
+    #bottom p{
+        font-size:2.1vw;
+        width:100%;
+        font-weight: 400;
+        line-height: 3vw;
+    color: #444;
+    }
+    #right{
+        height:100%;
+        width:100%;
+        /* background-color: red; */
+        position:relative;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #right-top{
+        display: flex;
+        justify-content: space-between;
+        height:40px;
+        width:100%;
+        /* background-color:blue; */
+        padding-top: 10px;
+    }
+    #right-top h4{
+        font-size:4vw;
+        font-weight:100;                           ;
+    }
+    #right-top h5{
+        font-size:4vw;
+        font-weight:100;    
+    }
+    #right img{
+        width:100%;
+        height: 100% ;
+        object-fit: cover;
+        margin-top:8px;
+    }
+    #black-circle{
+        background-color: rgb(44, 42, 42);
+        width:70px;
+        height:70px;
+        border-radius: 50%;
+        right:10%;
+        top:-5%;
+        position:absolute;
+    }
+    #black-circle{
+        font-size: 12px;
+        font-weight:900;
+    }
+    #rotated{
+        position: absolute;
+        left: 8%;
+        bottom:98%;
+        rotate: 360deg;
+        font-size:2.5vw;
+    }
+}
